@@ -1,0 +1,32 @@
+import os
+
+SECRET_KEY = os.urandom(24)
+
+DEBUG = True
+
+DB_USERNAME = 'root'
+DB_PASSWORD = 'a2001628'
+DB_HOST = '127.0.0.1'
+DB_PORT = '3306'
+DB_NAME = 'dyz'
+
+# PERMANENT_SESSION_LIFETIME =
+
+DB_URI = 'mysql+pymysql://%s:%s@%s:%s/%s?charset=utf8' % (DB_USERNAME, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME)
+
+SQLALCHEMY_DATABASE_URI = DB_URI
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+CMS_USER_ID = 'abcdefg'  # 随便写一值，这样session更加安全
+
+MAIL_SERVER = "smtp.qq.com"
+MAIL_PORT = '587'
+MAIL_USE_TLS = True
+MAIL_USERNAME = "1165049249@qq.com"
+MAIL_PASSWORD = "rxacvorknihigaeg"
+MAIL_DEFAULT_SENDER = "1165049249@qq.com"
+
+ALIDAYU_APP_KEY = 'LTxxxxxxBBfT8Q'
+ALIDAYU_APP_SECRET = 'SRxxxxxx8IL8LhJ'
+ALIDAYU_SIGN_NAME = '论坛网站'
+ALIDAYU_TEMPLATE_CODE = 'SMS_136xxx947'
